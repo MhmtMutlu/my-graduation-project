@@ -1,0 +1,33 @@
+* {
+    font-family: 'Roboto', sans-serif;
+}
+body {
+    padding: 0;
+    margin: 0;
+    background-image: linear-gradient(
+            to left bottom,
+            rgba(230, 230, 230, 0.7),
+            rgba(166, 166, 166, 0.7)
+          ),
+          url("/images/kampus.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+footer{
+    background-color: #404040;
+}
+.navbar{
+    background-color: #404040;
+}
+.jumbotron {
+    background-image: linear-gradient(
+        to left bottom,
+        rgba(191, 191, 191, 0.7),
+        rgba(140, 140, 140, 0.7)
+        ),
+        url("/images/nnyclocktower.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 110% 100%;
+}

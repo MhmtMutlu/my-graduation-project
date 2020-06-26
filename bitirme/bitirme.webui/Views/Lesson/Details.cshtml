@@ -1,0 +1,18 @@
+@model NoteModel
+
+<div class="card mb-3">
+    <div class="card-body">
+        <div class="row no-gutter">
+            <div class="col-md-9">
+                <h3 class="card-title">@Model.Title</h3>
+                <hr>
+                <h5>PDF Linki:</h5>
+                <a href="~/documents/@Model.DocUrl" download>PDF İçin Tıklayın</a>
+                <h5>Gönderen:</h5>
+                <p class="card-text">@Model.Author</p>
+                <h5>Gönderi Açıklaması:</h5>
+                <p>@Html.Raw(Model.Description)</p>
+            </div>
+        </div>
+    </div>
+</div>

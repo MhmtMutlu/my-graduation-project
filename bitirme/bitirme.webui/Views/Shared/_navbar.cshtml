@@ -1,0 +1,43 @@
+
+<div class="navbar navbar-dark navbar-expand-sm fixed-top">
+    <div class="container">
+        <a href="/" class="navbar-brand">
+            <img src="~/images/nnyicon.png" style="width: 85px; height: 75px;" alt="">
+            NNYU
+        </a>
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <a href="/books" class="nav-link">Kütüphane</a>
+            </li>
+            @if (User.Identity.IsAuthenticated)
+            {
+                <li class="nav-item">
+                    <a href="/departments/index" class="nav-link">Bölümler</a>
+                </li>
+            }
+            
+        </ul>
+        <ul class="navbar-nav ml-auto">
+            @if (User.Identity.IsAuthenticated)
+            {
+                <li class="nav-item">
+                    <a href="/account/manage" class="nav-link">
+                        @User.Identity.Name
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="/account/logout" class="nav-link">Çıkış Yap</a>
+                </li>
+            }
+            else
+            {
+                <li class="nav-item">
+                    <a href="/account/login" class="nav-link">Giriş Yap</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/account/register" class="nav-link">Kayıt Ol</a>
+                </li>  
+            }
+        </ul>
+    </div>
+</div>

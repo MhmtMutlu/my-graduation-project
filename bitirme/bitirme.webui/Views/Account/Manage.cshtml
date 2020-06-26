@@ -1,0 +1,36 @@
+@model UserDetailModel
+
+<h3 class="h1">Hesap Ayrıntıları</h3>
+<hr>
+<div class="row">
+    <div class="col-md-6">
+        <div class="list-group">
+            @if (User.IsInRole("Admin"))
+            {
+                <a href="/admin/notelist" class="list-group-item list-group-item-action list-group-item-secondary">
+                    Bütün Gönderiler
+                </a>
+                <a href="/admin/articlecreate" class="list-group-item list-group-item-action list-group-item-secondary">
+                    Makale Ekle
+                </a>
+                <a href="/admin/articlelist" class="list-group-item list-group-item-action list-group-item-secondary">
+                    Bütün Makaleler
+                </a>
+                <a href="/admin/books" class="list-group-item list-group-item-action list-group-item-secondary">
+                    Kitap Listesi
+                </a>
+                <a href="/admin/categories" class="list-group-item list-group-item-action list-group-item-secondary">
+                    Kategori Listesi
+                </a>
+                <a href="/admin/role/list" class="list-group-item list-group-item-action list-group-item-secondary">
+                    Rol Listesi
+                </a>
+                <a href="/admin/user/list" class="list-group-item list-group-item-action list-group-item-secondary">
+                    Kullanıcı Listesi
+                </a>
+            }
+            <a href="/account/forgotpassword" class="list-group-item list-group-item-action list-group-item-secondary">Şifre Değişikliği</a>
+            <a href="/account/logout" class="list-group-item list-group-item-action list-group-item-danger">Çıkış Yap</a>
+        </div>
+    </div>
+</div>

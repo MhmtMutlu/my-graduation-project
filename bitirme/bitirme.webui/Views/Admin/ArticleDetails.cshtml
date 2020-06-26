@@ -1,0 +1,16 @@
+@model ArticleModel
+
+<div class="card mb-3">
+    <div class="card-body">
+        <div class="row no-gutter">
+            <div class="col-md-9">
+                <h3 class="card-title">@Model.Title</h3>
+                <hr>
+                <h5>PDF Linki:</h5>
+                <a href="~/documents/@Model.DocUrl" download>PDF için tıklayın</a>
+                <h5>Gönderen:</h5>
+                <p class="card-text">@Model.Author</p>
+            </div>
+        </div>
+    </div>
+</div>

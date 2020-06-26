@@ -1,0 +1,29 @@
+@model bitirme.webui.Models.BookListViewModel
+
+@{
+    var bookClass = Model.Books.Count > 2 ? "popular" : "";
+    var books = Model.Books; // model yerine products da yazabiliriz.
+    // var categories = Model.Categories; // Model.Category.Name yerine categoryName de yazabiliriz. // Sonradan kaldırdım.
+}
+
+@section Categories
+{
+    @await Component.InvokeAsync("Categories")
+}
+
+
+@if (books.Count == 0)
+{
+    @await Html.PartialAsync("_nobook")
+}
+else
+{
+    <div class="row">
+        @foreach (var book in Model.Books)
+        {   
+            <div class="col-md-4">
+                @await Html.PartialAsync("_book", book)
+            </div>
+        } 
+    </div>
+}

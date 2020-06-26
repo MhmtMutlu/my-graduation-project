@@ -1,0 +1,14 @@
+C:\Users\Public\BitirmeProjesi\bitirme\bitirme.business\bin\Debug\netstandard2.0\bitirme.business.deps.json
+C:\Users\Public\BitirmeProjesi\bitirme\bitirme.business\bin\Debug\netstandard2.0\bitirme.business.dll
+C:\Users\Public\BitirmeProjesi\bitirme\bitirme.business\bin\Debug\netstandard2.0\bitirme.business.pdb
+C:\Users\Public\BitirmeProjesi\bitirme\bitirme.business\bin\Debug\netstandard2.0\bitirme.data.dll
+C:\Users\Public\BitirmeProjesi\bitirme\bitirme.business\bin\Debug\netstandard2.0\bitirme.entity.dll
+C:\Users\Public\BitirmeProjesi\bitirme\bitirme.business\bin\Debug\netstandard2.0\bitirme.entity.pdb
+C:\Users\Public\BitirmeProjesi\bitirme\bitirme.business\bin\Debug\netstandard2.0\bitirme.data.pdb
+C:\Users\Public\BitirmeProjesi\bitirme\bitirme.business\obj\Debug\netstandard2.0\bitirme.business.csprojAssemblyReference.cache
+C:\Users\Public\BitirmeProjesi\bitirme\bitirme.business\obj\Debug\netstandard2.0\bitirme.business.AssemblyInfoInputs.cache
+C:\Users\Public\BitirmeProjesi\bitirme\bitirme.business\obj\Debug\netstandard2.0\bitirme.business.AssemblyInfo.cs
+C:\Users\Public\BitirmeProjesi\bitirme\bitirme.business\obj\Debug\netstandard2.0\bitirme.business.csproj.CoreCompileInputs.cache
+C:\Users\Public\BitirmeProjesi\bitirme\bitirme.business\obj\Debug\netstandard2.0\bitirme.business.csproj.CopyComplete
+C:\Users\Public\BitirmeProjesi\bitirme\bitirme.business\obj\Debug\netstandard2.0\bitirme.business.dll
+C:\Users\Public\BitirmeProjesi\bitirme\bitirme.business\obj\Debug\netstandard2.0\bitirme.business.pdb

@@ -1,0 +1,12 @@
+C:\Users\Public\BitirmeProjesi\bitirme\bitirme.data\bin\Debug\netstandard2.0\bitirme.data.deps.json
+C:\Users\Public\BitirmeProjesi\bitirme\bitirme.data\bin\Debug\netstandard2.0\bitirme.data.dll
+C:\Users\Public\BitirmeProjesi\bitirme\bitirme.data\bin\Debug\netstandard2.0\bitirme.data.pdb
+C:\Users\Public\BitirmeProjesi\bitirme\bitirme.data\bin\Debug\netstandard2.0\bitirme.entity.dll
+C:\Users\Public\BitirmeProjesi\bitirme\bitirme.data\bin\Debug\netstandard2.0\bitirme.entity.pdb
+C:\Users\Public\BitirmeProjesi\bitirme\bitirme.data\obj\Debug\netstandard2.0\bitirme.data.csprojAssemblyReference.cache
+C:\Users\Public\BitirmeProjesi\bitirme\bitirme.data\obj\Debug\netstandard2.0\bitirme.data.AssemblyInfoInputs.cache
+C:\Users\Public\BitirmeProjesi\bitirme\bitirme.data\obj\Debug\netstandard2.0\bitirme.data.AssemblyInfo.cs
+C:\Users\Public\BitirmeProjesi\bitirme\bitirme.data\obj\Debug\netstandard2.0\bitirme.data.csproj.CoreCompileInputs.cache
+C:\Users\Public\BitirmeProjesi\bitirme\bitirme.data\obj\Debug\netstandard2.0\bitirme.data.csproj.CopyComplete
+C:\Users\Public\BitirmeProjesi\bitirme\bitirme.data\obj\Debug\netstandard2.0\bitirme.data.dll
+C:\Users\Public\BitirmeProjesi\bitirme\bitirme.data\obj\Debug\netstandard2.0\bitirme.data.pdb

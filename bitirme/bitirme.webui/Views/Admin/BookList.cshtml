@@ -1,0 +1,72 @@
+@model BookListViewModel
+
+
+<div class="row">
+    <div class="col-md-12">
+        <h1 class="h3">Kitap Listesi</h1>
+        <hr>
+        <a href="/admin/books/create" class="btn btn-secondary btn-sm">Kitap Ekle</a>
+        <table class="table table-bordered mt-3">
+            <thead>
+                <tr>
+                    <td style="width: 30px;">Id</td>
+                    <td style="width: 100px;">Resim</td>
+                    <td>İsim</td>
+                    <td style="width: 20px;">Stok</td>
+                    <td style="width: 20px;">Ana Sayfa</td>
+                    <td style="width: 20px;">Onay</td>
+                    <td style="width: 150px;"></td>
+                </tr>
+            </thead>
+            <tbody>
+                @if (Model.Books.Count > 0)
+                {
+                    @foreach (var item in Model.Books)
+                    {
+                        <tr>
+                            <td>@item.BookId</td>
+                            <td><img src="~/images/@item.ImageUrl" width="80"></td>
+                            <td>@item.Name</td>
+                            <td>@item.Stock</td>
+                            <td>
+                                @if (item.IsHome)
+                                {
+                                    <i class="fas fa-check-circle" style="color: green;"></i>
+                                }
+                                else
+                                {
+                                    <i class="fas fa-times-circle" style="color: red;"></i>
+                                }
+                            </td>
+                            <td>
+                                @if (item.IsApproved)
+                                {
+                                    <i class="fas fa-check-circle" style="color: green;"></i>
+                                }
+                                else
+                                {
+                                    <i class="fas fa-times-circle" style="color: red;"></i>
+                                }
+                            </td>
+                            <td>
+                                <a href="/admin/books/@item.BookId" class="btn btn-primary btn-sm mr-2">Güncelle</a>
+
+                                <form action="/admin/deletebook" method="POST" style="display: inline;">
+                                    <input type="hidden" name="bookId" value="@item.BookId">
+                                    <button type="submit" class="btn btn-danger btn-sm">Sil</button>
+                                </form>
+                                
+                            </td>
+                        </tr>
+                    }
+                }
+                else
+                {
+                    <div class="alert alert-warning">
+                        <h3>Henüz kitap eklenmemiş.</h3>
+                    </div>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>

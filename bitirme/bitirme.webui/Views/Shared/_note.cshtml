@@ -1,0 +1,9 @@
+@model Note
+
+<a href="/lesson/details/@Model.NoteId" class="list-group-item list-group-item-action list-group-item-secondary mb-1">
+    <div class="d-flex w-100 justify-content-between">
+        <h5 class="mb-1">@Model.Title</h5>
+    </div>
+    <hr>
+    <p class="mb-1">@Model.Author</p> 
+</a>

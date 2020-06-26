@@ -1,0 +1,47 @@
+@model NoteListViewModel
+
+<div class="row">
+    <div class="col-md-12">
+        <h1 class="h3">Bütün Notlar</h1>
+        <hr>
+        <a href="/lesson/notecreate" class="btn btn-secondary btn-sm">Not Ekle</a>
+        <table class="table table-bordered mt-3">
+            <thead>
+                <tr>
+                    <td style="width: 30px;">Id</td>
+                    <td>Not Başlığı</td>
+                    <td>Gönderen</td>
+                    <td style="width: 150px;"></td>
+                </tr>
+            </thead>
+            <tbody>
+                @if (Model.Notes.Count > 0)
+                {
+                    @foreach (var item in Model.Notes)
+                    {
+                        <tr>
+                            <td>@item.NoteId</td>
+                            <td>@item.Title</td>
+                            <td>@item.Author</td>
+                            <td>
+                               @* <a href="/admin/categories/@item.CategoryId" class="btn btn-primary btn-sm mr-2">Güncelle</a> *@
+
+                                <form action="/admin/deletenote" method="POST" style="display: inline;">
+                                    <input type="hidden" name="noteId" value="@item.NoteId">
+                                    <button type="submit" class="btn btn-danger btn-sm">Gönderiyi Sil</button>
+                                </form>
+                                
+                            </td>
+                        </tr>
+                    }
+                }
+                else
+                {
+                    <div class="alert alert-warning">
+                        <h3>Henüz kategori eklenmemiş.</h3>
+                    </div>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>

@@ -1,0 +1,27 @@
+@model BookDetailModel
+
+<div class="card mb-3">
+    <div class="card-body">
+        <div class="row no-gutter">
+            <div class="col-md-3">
+                <img src="~/images/@Model.Book.ImageUrl" class="card-img" alt="">
+            </div>
+            <div class="col-md-9">
+                <h3 class="card-title">@Model.Book.Name</h3>
+                <hr>
+                <h5>Kitap Kategorisi:</h5>
+                @foreach (var item in Model.Categories)
+                {
+                    <a asp-controller="Library" asp-action="List" asp-route-category="@item.Url" class="btn btn-link p-0 mb-3 inline">@item.Name</a> 
+                }
+                <h5>Kitabın Yazarı:</h5>
+                <p class="card-text">@Model.Book.Author</p>
+                <h5>Kütüphane Stok Adedi:</h5>
+                <p class="card-text">@Model.Book.Stock</p>
+                <h5>Kitabın Açıklaması:</h5>
+                <p>@Html.Raw(Model.Book.Description)</p>
+                
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,14 @@
+@model Book
+
+<div class="card mb-3" style="height: 400px;">
+    <img src="~/images/@Model.ImageUrl" alt="" class="card-img-top" style="height: 230px;">
+    <div class="card-body">
+        <h5 class="card-title">@Model.Name</h5>
+        <small class="text-muted">
+            @Model.Author
+        </small>
+    </div>
+    <div class="card-footer text-center">
+        <a asp-controller="Library" asp-action="Details" asp-route-url="@Model.Url" class="btn btn-secondary btn-sm btn-block"> Detaylar </a>
+    </div>
+</div>
