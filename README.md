@@ -1,4 +1,4 @@
-# BitirmeProjesi-GraduationProject-
-Nuh Naci Yazgan Üniversitesi, Elektrik-Elektronik Mühendisliği, Bitirme Projesi, 2020
+# My Graduation Project
+Nuh Naci Yazgan University, Electrical Electronic Engineering, Graduation Project, 2020
 
-Web Tabanlı Dijital Kütüphane ve Not Paylaşım Sitesi
+Web Based Digital Library and Note Sharing Platform
