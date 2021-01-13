@@ -6,7 +6,7 @@
   "dependencies": {
     "bootstrap": "^4.5.0",
     "ckeditor": "^4.12.1",
-    "jquery-validation": "^1.19.2",
+    "jquery-validation": "^1.19.3",
     "jquery-validation-unobtrusive": "^3.2.11"
   },
   "devDependencies": {},
