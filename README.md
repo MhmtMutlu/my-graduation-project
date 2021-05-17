@@ -21,7 +21,7 @@ In my graduation project, I aimed to present the facilities which have provided 
     <ul>
       <li>An open source, object–relational mapping (ORM) framework.</li> 
     </ul> 
- <li>SQLite>/li>
+ <li>SQLite</li>
     <ul>
       <li>SQLite is a relational database management system</li>
       <li>SQLite is not a client–server database engine. Rather, it is embedded into the end program.</li> 
